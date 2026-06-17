@@ -1,0 +1,189 @@
+/* ============================================================
+   LiLab — Custom CSS
+   Supplements Tailwind CDN. All brand decisions live here.
+   ============================================================ */
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; }
+
+/* ── Nav ─────────────────────────────────────────────────── */
+#main-nav {
+  background: transparent;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+#main-nav.scrolled {
+  background: rgba(13, 27, 42, 0.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.08);
+}
+
+/* ── Hero backgrounds ────────────────────────────────────── */
+.hero-bg {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 55%, #1a0a2e 100%);
+  position: relative;
+  overflow: hidden;
+}
+.page-hero {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+  min-height: 44vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero-img-bg {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.18;
+}
+
+/* ── Laser glow blobs ────────────────────────────────────── */
+.glow-red {
+  position: absolute; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, rgba(230,57,70,0.22) 0%, transparent 70%);
+}
+.glow-cyan {
+  position: absolute; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, rgba(76,201,240,0.18) 0%, transparent 70%);
+}
+.glow-green {
+  position: absolute; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle, rgba(0,160,80,0.16) 0%, transparent 70%);
+}
+
+/* ── Typography helpers ──────────────────────────────────── */
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #e63946;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+.font-display { font-family: 'Space Grotesk', sans-serif; }
+
+/* ── Cards ───────────────────────────────────────────────── */
+.card-hover {
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+/* ── Publication cards ───────────────────────────────────── */
+.pub-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.625rem;
+  transition: box-shadow 0.18s;
+}
+.pub-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
+.pub-card.accent-red  { border-left: 3px solid #e63946; }
+.pub-card.accent-blue { border-left: 3px solid #003087; }
+.pub-card.accent-green{ border-left: 3px solid #006633; }
+
+/* ── Gallery / photo strip ───────────────────────────────── */
+.photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: block;
+}
+.photo-item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  display: block;
+}
+.photo-item:hover img { transform: scale(1.06); }
+.photo-overlay {
+  position: absolute; inset: 0;
+  background: rgba(13,27,42,0.5);
+  opacity: 0; transition: opacity 0.28s;
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-size: 1.5rem;
+}
+.photo-item:hover .photo-overlay { opacity: 1; }
+
+/* ── Join Us page ────────────────────────────────────────── */
+.pillar-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.pillar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+}
+
+/* ── Member card ─────────────────────────────────────────── */
+.member-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition: transform 0.22s, box-shadow 0.22s;
+}
+.member-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.09);
+}
+.member-avatar {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 0.75rem;
+  background: #e2e8f0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; color: #94a3b8;
+  overflow: hidden;
+}
+
+/* ── Responsive video embed ──────────────────────────────── */
+.video-wrap {
+  position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
+  border-radius: 0.75rem;
+}
+.video-wrap video {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  object-fit: cover;
+}
+
+/* ── Stat pill ───────────────────────────────────────────── */
+.stat-pill {
+  display: flex; flex-direction: column; gap: 0.1rem;
+}
+.stat-pill .num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.75rem; font-weight: 800; line-height: 1;
+}
+.stat-pill .lbl {
+  font-size: 0.65rem; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  opacity: 0.55;
+}
+
+/* ── Mobile menu open state ──────────────────────────────── */
+#mobile-menu { display: none; }
+#mobile-menu.open { display: flex; }
+
+/* ── AOS overrides — 40px rise instead of default 100px ─── */
+/* No !important: cascade order wins for initial state;      */
+/* AOS's higher-specificity .aos-animate rule wins for end.  */
+[data-aos="fade-up"]    { transform: translate3d(0, 40px, 0); }
+[data-aos="fade-down"]  { transform: translate3d(0, -40px, 0); }
+[data-aos="fade-left"]  { transform: translate3d(40px, 0, 0); }
+[data-aos="fade-right"] { transform: translate3d(-40px, 0, 0); }

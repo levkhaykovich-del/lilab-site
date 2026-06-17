@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — LiLab · Bar-Ilan University</title>
+  <meta name="description" content="Contact Prof. Lev Khaykovich at the Ultracold Atoms Lab, Bar-Ilan University.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{fontFamily:{display:['"Space Grotesk"','sans-serif'],body:['Inter','sans-serif']}}}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="font-body text-slate-800 bg-white">
+<div id="nav-slot"></div>
+<main>
+
+  <!-- HERO -->
+  <section class="page-hero" style="min-height:32vh;">
+    <div class="glow-cyan w-[300px] h-[300px] top-0 right-10"></div>
+    <div class="glow-red w-[250px] h-[250px] bottom-0 left-20"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
+      <span class="section-label" style="color:#4cc9f0;">LiLab · Bar-Ilan University</span>
+      <h1 class="font-display font-extrabold text-white text-5xl mb-3">Contact</h1>
+      <p class="text-white/60">Get in touch with the lab</p>
+    </div>
+  </section>
+
+  <!-- CONTACT INFO -->
+  <section class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+        <!-- Left: contact details -->
+        <div>
+          <span class="section-label">Get in Touch</span>
+          <h2 class="font-display font-bold text-slate-900 text-4xl mb-8">Prof. Lev Khaykovich</h2>
+
+          <div class="space-y-6">
+            <div class="flex gap-4 items-start">
+              <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-lg flex-shrink-0">📧</div>
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Email</div>
+                <a id="contact-email" data-email href="#"
+                   class="text-[#003087] font-medium hover:underline text-base">lev.khaykovich@biu.ac.il</a>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-lg flex-shrink-0">📞</div>
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Phone</div>
+                <span class="text-slate-700 text-base">+972-3-5317747</span>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-lg flex-shrink-0">🏛️</div>
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Address</div>
+                <div class="text-slate-700 text-base leading-relaxed">
+                  Department of Physics<br>
+                  Bar-Ilan University<br>
+                  Ramat Gan 5290002<br>
+                  Israel
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4 items-start">
+              <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-lg flex-shrink-0">🔗</div>
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Links</div>
+                <div class="flex flex-col gap-1.5">
+                  <a href="http://physics.biu.ac.il" target="_blank" class="text-[#003087] hover:underline text-sm">BIU Department of Physics →</a>
+                  <a href="http://www.ph.biu.ac.il/fpages/Khaykovich_Lev.html" target="_blank" class="text-[#003087] hover:underline text-sm">Faculty Profile Page →</a>
+                  <a href="https://www.researchgate.net/profile/Lev-Khaykovich" target="_blank" class="text-[#003087] hover:underline text-sm">ResearchGate Profile →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Apply box -->
+          <div class="mt-10 bg-[#e63946]/5 border border-[#e63946]/15 rounded-2xl p-6">
+            <div class="text-[#e63946] font-semibold text-sm mb-2">Interested in joining the lab?</div>
+            <p class="text-slate-600 text-sm mb-4">
+              For PhD and postdoc applications, please see the
+              <a href="join.html" class="text-[#e63946] font-medium hover:underline">Join Us page</a>
+              for details on open positions and how to apply.
+            </p>
+            <a href="join.html" class="inline-block bg-[#e63946] text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-red-600 transition-colors">
+              See Open Positions →
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: map -->
+        <div>
+          <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-100 h-80 mb-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.5!2d34.843!3d32.069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b82f1a1d9b5%3A0x1234567890abcdef!2sBar-Ilan%20University!5e0!3m2!1sen!2sil!4v1"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              title="Bar-Ilan University map">
+            </iframe>
+          </div>
+          <p class="text-slate-400 text-xs text-center">Bar-Ilan University · Ramat Gan, Israel</p>
+
+          <div class="mt-6 bg-slate-50 rounded-2xl p-5 text-sm text-slate-600 leading-relaxed">
+            <strong class="text-slate-700">Getting here:</strong> Bar-Ilan University is located in Ramat Gan,
+            adjacent to Tel Aviv. The university is accessible by train (Bar-Ilan station on the Red Line),
+            bus, and car. The Physics Department is in Building 202 on campus.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+<div id="footer-slot"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
