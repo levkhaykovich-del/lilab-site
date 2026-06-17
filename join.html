@@ -224,24 +224,42 @@
           <h2 class="font-display font-bold text-slate-900 text-3xl mb-3">A small team doing serious science</h2>
           <p class="text-slate-500 max-w-xl">Everyone works on the machine, builds what we need, and figures things out together — directly alongside Prof. Khaykovich.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" data-aos="fade-up">
+        <!-- Desktop: portrait left spanning 3 rows, 3 landscape right -->
+        <div class="hidden md:grid gap-4" data-aos="fade-up"
+             style="grid-template-columns:1fr 1fr; grid-template-rows:repeat(3,155px);">
           <img src="assets/images/lab/IMG_9020.jpeg"
                alt="Student at work inside the full BEC apparatus"
-               class="rounded-xl object-cover w-full shadow-md"
-               style="max-height:520px;min-height:360px;">
-          <div class="grid grid-rows-3 gap-4">
-            <img src="assets/images/lab/prof-student.jpg"
-                 alt="Prof. Khaykovich working alongside a student"
-                 class="rounded-xl object-cover w-full h-full shadow-md"
-                 style="object-position:center 20%;">
-            <img src="assets/images/lab/student-workbench.jpg"
-                 alt="Student at the lab workbench"
-                 class="rounded-xl object-cover w-full h-full shadow-md">
-            <img src="assets/images/lab/student-assembly.jpg"
-                 alt="Student assembling vacuum components"
-                 class="rounded-xl object-cover w-full h-full shadow-md"
-                 style="object-position:center 20%;">
-          </div>
+               class="rounded-xl object-cover shadow-md"
+               style="grid-row:1/4; width:100%; height:100%; object-position:center 35%;">
+          <img src="assets/images/lab/prof-student.jpg"
+               alt="Prof. Khaykovich working alongside a student"
+               class="rounded-xl object-cover shadow-md"
+               style="object-position:center 20%;">
+          <img src="assets/images/lab/student-workbench.jpg"
+               alt="Student at the lab workbench"
+               class="rounded-xl object-cover shadow-md">
+          <img src="assets/images/lab/student-assembly.jpg"
+               alt="Student assembling vacuum components"
+               class="rounded-xl object-cover shadow-md"
+               style="object-position:center 20%;">
+        </div>
+        <!-- Mobile: full-width feature + 2-col strip -->
+        <div class="md:hidden grid grid-cols-2 gap-3" data-aos="fade-up">
+          <img src="assets/images/lab/IMG_9020.jpeg"
+               alt="Student at work inside the full BEC apparatus"
+               class="rounded-xl object-cover w-full h-52 shadow-md col-span-2"
+               style="object-position:center 35%;">
+          <img src="assets/images/lab/prof-student.jpg"
+               alt="Prof. Khaykovich working alongside a student"
+               class="rounded-xl object-cover w-full h-36 shadow-md"
+               style="object-position:center 20%;">
+          <img src="assets/images/lab/student-workbench.jpg"
+               alt="Student at the lab workbench"
+               class="rounded-xl object-cover w-full h-36 shadow-md">
+          <img src="assets/images/lab/student-assembly.jpg"
+               alt="Student assembling vacuum components"
+               class="rounded-xl object-cover w-full h-36 shadow-md col-span-2"
+               style="object-position:center 20%;">
         </div>
       </div>
     </section>
