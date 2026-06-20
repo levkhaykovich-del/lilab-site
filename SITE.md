@@ -1,7 +1,7 @@
 # LiLab Website — Maintenance Guide
 
 **Site URL:** https://jeanpatrick27.github.io/lilab-site/ (GitHub Pages — move to custom domain before launch)
-**Repo:** https://github.com/jeanpatrick27/lilab-site
+**Repo:** https://github.com/levkhaykovich-del/lilab-site
 **Branch:** `main` (auto-deploys to GitHub Pages)
 **Local copy:** `C:\Lab\site\`
 
