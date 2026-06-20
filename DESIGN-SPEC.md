@@ -13,7 +13,7 @@
 
 Those two files are the authoritative working documents. This spec is the original design brief and is useful for broader context, but BRAND.md and SITE.md are what you need day-to-day.
 
-**Repo:** https://github.com/jeanpatrick27/lilab-site · **Branch:** `main` · **Local:** `C:\Lab\site\`
+**Repo:** https://github.com/levkhaykovich-del/lilab-site · **Branch:** `main` · **Local:** `C:\Lab\site\`
 
 ---
 

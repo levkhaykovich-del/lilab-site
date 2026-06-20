@@ -15,7 +15,7 @@
 | PI | Prof. Lev Khaykovich |
 | Location | Ramat Gan, Israel |
 | Email | lev.khaykovich@biu.ac.il |
-| Website | https://jeanpatrick27.github.io/lilab-site/ (move to custom domain before launch) |
+| Website | https://lilab.levkhaykovich.com |
 | Lab founded | ~2004 (first BIU-era publications appear 2006) |
 
 **What "Li" stands for:** Lithium — the element the lab works with. LiLab = Lithium Lab.
